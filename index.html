@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
         <div class="header__rectangle_green"></div>
-        <div class="header__rectangle_white_left"></div>
-        <div class="header__rectangle_white_right"></div>
-        <img class="top-cubes-image" src="images/top-cubes.svg" alt="top-cubes-image">
-        <img class="squares-image" src="images/squares.svg" alt="squares-image">
-        <div class="container">
+        <div class="container header__container">
             <div class="logos">
                 <img class="main-logo" src="images/main-logo.svg" alt="main-logo">
                 <img class="fide-logo" src="images/fide-logo.svg" alt="fide-logo">
@@ -49,23 +46,47 @@
                 </ul>
             </nav>
             <ul class="site-params">
-                <li class="site-params__item">Ru</li>
-                <li class="site-params__item">En</li>
+                <li class="site-params__item">
+                    <a class="site-params__link site-params__link_selected" href="#">Ru</a>
+                </li>
+                <li class="site-params__item">
+                    <a class="site-params__link" href="#">En</a>
+                </li>
                 <li class="site-params__item">
                     <img class="glasses-icon" src="images/glasses-icon.svg" alt="glasses icon">
                 </li>
             </ul>
+            <button class="burger-menu burger-menu_status">
+                <img src="images/burger-menu.svg" alt="burger-menu">
+            </button>
         </div>
     </header>
-    <main>
-        <section class="top">
-            <div class="container">
+    <main">
+        <section class="top">          
+            <img class="top-cubes-image" src="images/top-cubes.svg" alt="top-cubes-image">
+            <img class="squares-image" src="images/squares.svg" alt="squares-image">
+            <div class="container top__container">
+                <div class="header__rectangle_white_left"></div>
+                <div class="header__rectangle_white_right"></div>
                 <div class="top__grid">
-                    <div class="top__title">
-                        <h1 class="top__title-text">КУБОК МИРА ПО ШАХМАТАМ 2019</h1>
+                    <div class="top__title top__grid-title">
+                        <h1 class="top__title-text">КУБОК МИРА <br>ПО ШАХМАТАМ <span>2019</span></h1>
                     </div>
-                    <div class="top__info">
-                        <button class="button-reg">Регистрация</button>
+                    <div class="top__info top__grid-info">
+                        <div class="top__info-btn-container">
+                            <button class="button-reg top__info-btn">Регистрация</button>
+                        </div>
+                        <ul class="socials_alternative">
+                            <li>
+                                <img class="gray-twitter-icon" src="images/gray-twitter-icon.svg" alt="twitter-icon">
+                            </li>
+                            <li>
+                                <img class="gray-inst-icon" src="images/gray-inst-icon.svg" alt="inst-icon">
+                            </li>
+                            <li>
+                                <img class="gray-fc-icon" src="images/gray-fc-icon.svg" alt="fc-icon">
+                            </li>
+                        </ul>
                         <ul class="socials">
                             <li>
                                 <img class="twitter-icon" src="images/twitter-icon.svg" alt="twitter-icon">
@@ -78,11 +99,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="top__date">
+                    <div class="top__date top__grid-date">
                         <div class="date">
-                            <h3 class="date__text">9 сентября</h3>
+                            <h3 class="date__text">9 <span>сентября</span></h3>
                             <img src="images/line-btwn-words.svg" class="line-btwn-words-image" alt="">
-                            <h3 class="date__text">4 октября</h3>
+                            <h3 class="date__text">4 <span>октября</span></h3>
                         </div>
                         <div class="city">
                             <h2 class="city__text">Ханты-Мансийск</h2>
@@ -92,26 +113,47 @@
             </div>
         </section>
         <section class="news">
-            <div class="news__rectangle_gray"></div>
             <div class="news__rectangle_green"></div>
             <img class="news-cubes-image_top" src="images/news-cubes-image_top.svg" alt="news-cubes-image_top">
             <img class="news-squeres-image_left" src="images/news-squeres-image_left.svg" alt="news-squeres-image_left">
             <img class="news-tree-image" src="images/news-tree-image.svg" alt="news-tree-image">
+            <img class="news-cubes-image_bottom" src="images/news-cubes-image_bottom.svg" alt="news-cubes-image_bottom">
             <img class="news-squeres-image_right" src="images/news-squeres-image_right.svg" alt="news-squeres-image_right">
-            <img class="news-cubes-image-bottom" src="images/news-cubes-image-bottom.svg" alt="news-cubes-image-bottom">
-            <div class="container">
-                <div class="main-title">
+            <div class="container news__container">
+                <div class="news__rectangle_gray"></div>
+                <div class="main-title news__title">
                     <div class="main-title__rectangle"></div>
-                    <h1 class="main-title__text">Новости турнира</h1>
+                    <h1 class="main-title__text">Новости <span>турнира</span></h1>
                 </div>
                 <div class="news__list">
                     <div class="news__list-item">
                         <div class="news__list-photo">
-                            <img src="images/news-item-photo.svg" alt="news-item-photo">
+                            <img class="news-photo" src="images/news-item-photo.svg" alt="news-item-photo">
                         </div>
                         <div class="news__list-info">
                             <div class="news__list-time">
-                                <img src="images/green-line.svg" alt="green-line">
+                                <img class="time-line" src="images/green-line.svg" alt="green-line">
+                                <span class="double-slash">//</span>
+                                <span>2 дня назад</span>
+                            </div>
+                            <div class="news__list-title">
+                                <h4>Церемония закрытия FIDE World cup 2019</h4>
+                            </div>
+                            <div class="news__list-content">
+                                Церемония закрытия состоялась 
+                                в отеле Biltmore в Тбилиси 27 сентября 2017 года. 
+                                Игроков и гостей приветствовал министр спорта по делам молодежи.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__list-item news__list-item_right">
+                        <div class="news__list-photo">
+                            <img class="news-photo" src="images/news-item-photo.svg" alt="">
+                        </div>
+                        <div class="news__list-info">
+                            <div class="news__list-time">
+                                <img class="time-line" src="images/green-line.svg" alt="green-line">
+                                <span class="double-slash">//</span>
                                 <span>2 дня назад</span>
                             </div>
                             <div class="news__list-title">
@@ -126,11 +168,12 @@
                     </div>
                     <div class="news__list-item">
                         <div class="news__list-photo">
-                            <img src="images/news-item-photo.svg" alt="">
+                            <img class="news-photo" src="images/news-item-photo.svg" alt="">
                         </div>
                         <div class="news__list-info">
                             <div class="news__list-time">
-                                <img src="images/green-line.svg" alt="">
+                                <img class="time-line" src="images/green-line.svg" alt="green-line">
+                                <span class="double-slash">//</span>
                                 <span>2 дня назад</span>
                             </div>
                             <div class="news__list-title">
@@ -143,32 +186,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="news__list-item">
+                    <div class="news__list-item news__list-item_right">
                         <div class="news__list-photo">
-                            <img src="images/news-item-photo.svg" alt="">
+                            <img class="news-photo" src="images/news-item-photo.svg" alt=""">
                         </div>
                         <div class="news__list-info">
                             <div class="news__list-time">
-                                <img src="images/green-line.svg" alt="">
-                                <span>2 дня назад</span>
-                            </div>
-                            <div class="news__list-title">
-                                <h4>Церемония закрытия FIDE World cup 2019</h4>
-                            </div>
-                            <div class="news__list-content">
-                                Церемония закрытия состоялась 
-                                в отеле Biltmore в Тбилиси 27 сентября 2017 года. 
-                                Игроков и гостей приветствовал министр спорта по делам молодежи.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news__list-item">
-                        <div class="news__list-photo">
-                            <img src="images/news-item-photo.svg" alt=""">
-                        </div>
-                        <div class="news__list-info">
-                            <div class="news__list-time">
-                                <img src="images/green-line.svg" alt="">
+                                <img class="time-line" src="images/green-line.svg" alt="green-line">
+                                <span class="double-slash">//</span>
                                 <span>2 дня назад</span>
                             </div>
                             <div class="news__list-title">
@@ -191,7 +216,7 @@
         <section class="partners">
             <div class="container">
                 <div class="partners__title">
-                    <div class="main-title">
+                    <div class="main-title partners__title-item">
                         <div class="main-title__rectangle"></div>
                         <h1 class="main-title__text">Партнеры</h1>
                     </div>
@@ -201,22 +226,22 @@
                     </div>
                 </div>
                 <div class="partners__emblems">
-                    <img src="images/emblem1.svg" alt="emblem2">
-                    <img src="images/emblem2.svg" alt="emblem3">
-                    <img src="images/emblem3.svg" alt="emblem4">
-                    <img src="images/emblem4.svg" alt="emblem5">
-                    <img src="images/emblem5.svg" alt="emblem6">
-                    <img src="images/emblem6.svg" alt="emblem7">
-                    <img src="images/emblem7.svg" alt="emblem8">
+                    <img src="images/emblem1.svg" alt="emblem1">
+                    <img src="images/emblem2.svg" alt="emblem2">
+                    <img class="delete-emblem3" src="images/emblem3.svg" alt="emblem3">
+                    <img class="delete-emblem4" src="images/emblem4.svg" alt="emblem4">
+                    <img class="delete-emblem5" src="images/emblem5.svg" alt="emblem5">
+                    <img class="delete-emblem6" src="images/emblem6.svg" alt="emblem6">
+                    <img class="delete-emblem7" src="images/emblem7.svg" alt="emblem7">
                 </div>
-                <div class="progress-bar">
-                    <div class="progress-bar__elem"></div>
+                <div class="progress-bar partners__progress-bar">
+                    <div class="progress-bar__element"></div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
             <div class="footer__info">
                 <div class="logos">
                     <img src="images/main-logo_white.svg" alt="main-logo_white">
@@ -229,7 +254,7 @@
                      только с указанием активной ссылки на сайт
                 </div>
             </div>
-            <nav class="footer__menu">
+            <nav class="footer__menu footer__menu_order">
                 <ul class="footer__menu-list">
                     <li class="footer__menu-item">
                         <a class="footer__menu-link">На главную</a>
