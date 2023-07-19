@@ -271,6 +271,10 @@ hr {
     grid-row: 1;
 }
 
+.top__title-text {
+    margin: 105px 0px 0px 0px;
+}
+
 .top__info {
     display: flex;
     width: 685px;
@@ -303,7 +307,7 @@ hr {
 .top__grid-info {
     grid-column: 1;
     grid-row: 2;
-    margin-top: 78px;
+    margin-top: 105px;
 }
 
 .socials {
@@ -319,7 +323,7 @@ hr {
 .top__grid-date {
     grid-column: 2;
     grid-row: 2;
-    margin-top: 58px;
+    margin-top: 95px;
 }
 
 .date {
@@ -665,7 +669,7 @@ hr {
 .footer__up-arrow {
     position: absolute;
     height: 16px;
-    width: 34px;
+    width: 34;
     right: 46px;
     bottom: 104px;
 }
@@ -698,7 +702,6 @@ hr {
     }
 
     .top__grid-date {
-        margin-top: 68px;
         margin-left: -155px;
     }
 
