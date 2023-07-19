@@ -662,6 +662,13 @@ hr {
     text-decoration: underline
 }
 
+.footer__up-arrow {
+    position: absolute;
+    height: 16px;
+    width: 34px;
+    right: 46px;
+    bottom: 104px;
+}
 
 
 @media (max-width: 1440px) {
@@ -693,6 +700,10 @@ hr {
     .top__grid-date {
         margin-top: 68px;
         margin-left: -155px;
+    }
+
+    .up-arrow {
+        bottom: 13px;
     }
 
 }
@@ -915,6 +926,10 @@ hr {
 
     .footer__menu_order {
         order: 4
+    }
+
+    .footer__up-arrow {
+        display: none;
     }
 }
 

@@ -86,7 +86,7 @@
     background-image: url('../images/close-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
-    display: inline-block !important;
+    display: inline-block;
 }
 
 .open-arrow {
