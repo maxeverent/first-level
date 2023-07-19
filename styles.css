@@ -150,7 +150,7 @@ hr {
     align-items: center;
 }
 
-.main-logo {
+.logos__main-logo {
     margin-right: 50px;
 }
 
@@ -824,7 +824,7 @@ hr {
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
    .container {
         padding: 0 28px;
    }
@@ -854,6 +854,10 @@ hr {
     }
 
     .news-cubes-image_bottom {
+        display: none;
+    }
+
+    .news__rectangle_gray {
         display: none;
     }
 
@@ -892,7 +896,7 @@ hr {
 
     .footer__menu-list {
         margin: 0;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .footer__info {
@@ -963,10 +967,6 @@ hr {
 
     .top__grid-info {
         margin-top: 60px;
-    }
-
-    .news__rectangle_gray {
-        display: none;
     }
 
     .header__rectangle_white_left {
@@ -1076,6 +1076,10 @@ hr {
     h2 {
         text-align: center;
     }
+
+    h4 {
+        margin: 18px 0px 14px 0px;
+    }
     
     .top-cubes-image {
         display: none;
@@ -1118,7 +1122,7 @@ hr {
     }
 
     .news__title {
-        margin: 150px auto 100px auto;
+        margin: 158px auto 65px auto;
     }
 
     .main-title__text {
@@ -1139,15 +1143,11 @@ hr {
         letter-spacing: 0px;
     }
 
-    .news__list {
-        margin-top: -80px
-    }
-
     .news__list-item {
         width: 513px;
         height: 776px;
         flex-direction: column;
-        margin: 80px auto;
+        margin: 35px auto;
     }
 
     .news__list-info {
@@ -1175,7 +1175,6 @@ hr {
         margin: 91px auto 63px auto;
     }
 
-
     .partners__switcher {
         display: none;
     }
@@ -1196,13 +1195,22 @@ hr {
     .logos {
         margin: 0 auto
     }
+    
+    .footer__container {
+        justify-content: normal;
+    }
 
     .footer__menu {
         width: 100%;
+        margin: 69px auto 0px auto;
     }
 
     .footer__menu_order {
         order: 0
+    }
+
+    .footer__menu-list {
+        justify-content: center;
     }
 
     .footer__menu-item {
@@ -1210,7 +1218,7 @@ hr {
     }
 
     .contacts {
-        margin: auto;
+        margin: 80px auto 0px auto;
         text-align: center;
     }
 
@@ -1285,6 +1293,10 @@ hr {
         margin-top: 0px;
     }
 
+    .news__title {
+        margin: 135px auto 0px auto;
+    }
+
     .main-title__text {
         font-size: 34px;
         font-weight: 900;
@@ -1328,11 +1340,15 @@ hr {
     }
 
     .footer__menu {
-        margin: auto;
+        margin: 64px auto 0px auto;
     }
 
     .footer__menu-item {
         width: 50%;
         padding: 15px 0px;
+    }
+
+    .contacts {
+        margin: 40px auto 0px auto;
     }
 }

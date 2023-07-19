@@ -64,11 +64,11 @@ menuList.className = 'burger-menu__list'
 
 const showListOption = (a) => {
     const arrowIcon = document.createElement('span')
-    arrowIcon.classList.add('open-arrow', 'burger-menu__option-arrow')
+    arrowIcon.classList.add('close-arrow', 'burger-menu__option-arrow')
     a.appendChild(arrowIcon)
     arrowIcon.addEventListener('click', (e) => {
         document.querySelector('.burger-menu__option').classList.toggle('burger-menu__option_show')
-        arrowIcon.classList.toggle('close-arrow')
+        arrowIcon.classList.toggle('open-arrow')
     })
 }
 

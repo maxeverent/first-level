@@ -80,6 +80,15 @@
     display: none;
 }
 
+.close-arrow {
+    width: 18px;
+    height: 12px;
+    background-image: url('../images/close-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block !important;
+}
+
 .open-arrow {
     width: 18px;
     height: 12px;
@@ -89,14 +98,6 @@
     display: inline-block;
 }
 
-.close-arrow {
-    width: 18px;
-    height: 12px;
-    background-image: url('../images/close-arrow.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-}
 
 .burger-menu__option-arrow {
     margin-left: 15px;
