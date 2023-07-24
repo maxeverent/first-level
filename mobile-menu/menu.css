@@ -13,12 +13,16 @@
     src: url('../fonts/Roboto-Light.ttf');
 }
 
+.background_disable {
+    overflow-y: hidden;
+}
+
 .header__burger-menu {
-    width: 576px;
+    width: 100%;
     height: auto;
-    position: absolute;
+    position: fixed;
     right: 0px;
-    top: -38px;
+    top: 0px;
     background-color: white;
     box-shadow: 0px 15px 25px 0px #3333333D; 
     z-index:9999;
@@ -28,6 +32,12 @@
     transition: all 0.7s ease 0s;
 }
 
+.menu-container {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 .header__burger-menu_show {
     visibility: unset;
     opacity: 1 ;
@@ -35,7 +45,7 @@
 }
 
 .burger-menu__header {
-    max-width: 576px;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,13 +60,13 @@
 .burger-menu__close-btn {
     width: 61px;
     height: 61px;
-    border-width: 0px, 0px, 0px, 0px;
     border-style: solid;
     border-color: #BBBBBB;
     background-color: white;
     background-image: url('../images/close-btn.svg');
     background-repeat: no-repeat;
     background-position: center;
+    border: 0;
 }
 
 .burger-menu__list {
@@ -68,7 +78,7 @@
 
 .burger-menu__item {
     padding: 20px 0px;
-    width: 576px;
+    width: 100%;
 }
 
 .burger-menu__option_show {
@@ -104,7 +114,7 @@
 }
 
 
-.burger-menu__option hr {
+.burger-menu__option-line {
     margin: 0;
     border: 1px solid #BBB;
     opacity: 0.5;
@@ -112,7 +122,7 @@
 
 .burger-menu__option-item {
     background-color: #F0F0F0;
-    max-width: 576px;
+    max-width: 100%;
     height: 75px;
     display: flex;
     justify-content: center;
@@ -153,7 +163,7 @@
     line-height: 20px;
 }
 
-.burger-menu__phone span {
+.burger-menu__phone_regular {
     font-family: 'RobotoLight', sans-serif;
     font-size: 34px;
     font-weight: 300;
@@ -166,15 +176,4 @@
     color: #333333;
     padding: 23px 0px 44px 0px;
     margin: 0px auto;
-}
-
-
-@media (max-width: 576px) {
-    .header__burger-menu {
-        max-width: 375px;
-    }
-
-    .burger-menu__item {
-        max-width: 375px;
-    }
 }

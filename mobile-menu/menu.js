@@ -36,11 +36,13 @@ const menu = [
 const langs = ['Ru', 'En']
 
 const burgerMenu = document.querySelector('.header__burger-menu')
+const background = document.querySelector('html')
 
 const buttonMenu = document.querySelector('.header__burger-menu-btn')
 if (buttonMenu) {
     buttonMenu.addEventListener('click', (e) => {
         burgerMenu.classList.add('header__burger-menu_show')
+        background.classList.add('background_disable')
     })
 }
 
@@ -48,6 +50,7 @@ const closeBtn = document.createElement('button')
 closeBtn.classList.add('burger-menu__close-btn')
 closeBtn.addEventListener('click', (e) => {
     burgerMenu.classList.remove('header__burger-menu_show')
+    background.classList.remove('background_disable')
 })
 
 const logo = document.createElement('img')
@@ -62,12 +65,12 @@ headerMenu.appendChild(closeBtn)
 const menuList = document.createElement('ul')
 menuList.className = 'burger-menu__list'
 
-const showListOption = (a) => {
+const showListOption = (li) => {
     const arrowIcon = document.createElement('span')
     arrowIcon.classList.add('close-arrow', 'burger-menu__option-arrow')
-    a.appendChild(arrowIcon)
-    arrowIcon.addEventListener('click', (e) => {
-        document.querySelector('.burger-menu__option').classList.toggle('burger-menu__option_show')
+    li.children[0].appendChild(arrowIcon)
+    li.children[0].addEventListener('click', (e) => {
+        li.children[1].classList.toggle('burger-menu__option_show')
         arrowIcon.classList.toggle('open-arrow')
     })
 }
@@ -79,8 +82,8 @@ menu.forEach(el => {
     a.textContent = el.name
     a.className = 'burger-menu__item-link'
     if (el.items.length != 0) {
-        showListOption(a)
         li.appendChild(a)
+        showListOption(li)
         const option = document.createElement('div') 
         option.classList.add('burger-menu__option') 
         el.items.forEach((item, index) => {
@@ -89,7 +92,9 @@ menu.forEach(el => {
             optionItem.classList.add('burger-menu__option-item')
             option.appendChild(optionItem) 
             if (index != el.items.length - 1) {
-                option.appendChild(document.createElement('hr'))
+                const hr = document.createElement('hr')
+                hr.classList.add('burger-menu__option-line')
+                option.appendChild(hr)
             }
         })
         li.appendChild(option)
@@ -116,16 +121,22 @@ langs.forEach(el => {
 })
 
 const phone = document.createElement('div')
-phone.innerHTML = "<span>+7 (3467)</span> 555-321"
+phone.innerHTML = `<span class="burger-menu__phone_regular">+7 (3467)</span> 555-321`
 phone.classList.add('phone', 'burger-menu__phone')
 
 const address = document.createElement('div')
 address.textContent = 'г. Ханты-Мансийск, ул. Лопарева'
 address.classList.add('address', 'burger-menu__address')
 
-burgerMenu.appendChild(headerMenu)
-burgerMenu.appendChild(menuList)
-burgerMenu.appendChild(glasses)
-burgerMenu.appendChild(siteParams)
-burgerMenu.appendChild(phone)
-burgerMenu.appendChild(address)
+const menuContainer = document.createElement('div')
+menuContainer.classList.add('menu-container')
+
+menuContainer.appendChild(headerMenu)
+menuContainer.appendChild(menuList)
+menuContainer.appendChild(glasses)
+menuContainer.appendChild(siteParams)
+menuContainer.appendChild(phone)
+menuContainer.appendChild(address)
+
+burgerMenu.append(menuContainer)
+

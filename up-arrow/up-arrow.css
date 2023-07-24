@@ -1,0 +1,13 @@
+.up-arrow {
+    height: 16px;
+    width: 34px;
+    background-image: url('../images/up-arrow.svg');
+    background-size: cover;
+}
+
+.up-arrow:hover {
+    background-image: url('../images/up-arrow_green.svg');
+}
+
+
+
