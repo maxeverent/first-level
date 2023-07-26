@@ -93,7 +93,7 @@ h3 {
     margin: 0;
 }
 
-h3 span {
+.date__text_regular {
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -792,7 +792,7 @@ hr {
         text-align: left;
     }
     
-    h3 span {
+    .date__text_regular {
         font-size: 18px;
         font-weight: 700;
         line-height: 22px;
@@ -832,7 +832,7 @@ hr {
         text-align: left;
     }
     
-    h3 span {
+    .date__text_regular {
         font-size: 18px;
         font-weight: 700;
         line-height: 22px;
@@ -1043,7 +1043,7 @@ hr {
         text-align: left;
     }
     
-    h3 span {
+    .date__text_regular {
         font-size: 18px;
         font-weight: 700;
         line-height: 22px;
@@ -1168,7 +1168,7 @@ hr {
         text-align: center;
     }
     
-    h3 span {
+    .date__text_regular {
         font-size: 18px;
         font-weight: 700;
         line-height: 22px;
@@ -1269,10 +1269,6 @@ hr {
         display: none;
     }
 
-    .news__list-time span {
-        margin: 0 20px 0 0;
-    }
-
     .news__photo {
         width: 508px;
         height: 508px;
@@ -1357,7 +1353,7 @@ hr {
         text-align: center;
     }
     
-    h1 span {
+    .top__title-text_regular {
         font-size: 44px;
         font-weight: 400;
         line-height: 55px;
@@ -1371,7 +1367,7 @@ hr {
         text-align: center;
     }
     
-    h3 span {
+    .date__text_regular {
         font-size: 16px;
         line-height: 19px;
         text-align: center;
