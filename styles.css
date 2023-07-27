@@ -12,14 +12,14 @@ html {
     overflow-x: hidden;
 }
 
-@font-face { 
+@font-face {
     font-family: "Baufra-Medium";
     src: url("fonts/BaufraMedium.ttf");
     font-style: normal;
     font-weight: 500;
 }
 
-@font-face { 
+@font-face {
     font-family: "Baufra-Bold";
     src: url("fonts/BaufraBold.ttf");
     font-style: normal;
@@ -155,7 +155,7 @@ hr {
     display: flex;
     justify-content: space-between;
     gap:20px
-} 
+}
 
 .menu {
     width: 609px;
@@ -193,7 +193,7 @@ hr {
     position: absolute;
     z-index: 1;
     background-color: white;
-    padding: 0; 
+    padding: 0;
 
     display: none;
 }
@@ -439,7 +439,7 @@ hr {
 
 .news__rectangle_gray{
     width: 610px;
-    min-width: 515px; 
+    min-width: 515px;
     height: 333px;
     background-color: #F0F0F0;
     position: absolute;
@@ -476,7 +476,7 @@ hr {
 .news-cubes-image_bottom {
     position: absolute;
     top: 1900px;
-    right: 76%;
+    right: 78%;
 }
 
 .news-squeres-image_right {
@@ -791,7 +791,7 @@ hr {
         letter-spacing: 0px;
         text-align: left;
     }
-    
+
     .date__text_regular {
         font-size: 18px;
         font-weight: 700;
@@ -823,7 +823,7 @@ hr {
         text-align: left;
     }
 
-    
+
     h3 {
         font-size: 38px;
         font-weight: 700;
@@ -831,7 +831,7 @@ hr {
         letter-spacing: 0px;
         text-align: left;
     }
-    
+
     .date__text_regular {
         font-size: 18px;
         font-weight: 700;
@@ -839,7 +839,7 @@ hr {
         letter-spacing: 5px;
         text-align: left;
     }
-    
+
     h2 {
         font-size: 28px;
         font-weight: 700;
@@ -847,17 +847,17 @@ hr {
         letter-spacing: 0px;
         text-align: left;
     }
-    
+
     .menu {
         width: 506px;
     }
-    
+
     .menu__list-link {
         font-size: 14px;
         line-height: 17px;
         text-align: left;
     }
-    
+
     .container {
         padding: 0 40px
     }
@@ -865,22 +865,22 @@ hr {
     .header__rectangle_white_left {
         height: 133px;
     }
-    
+
     .top__grid {
         height: 606px;
         grid-template-columns: 864px;
-        grid-template-rows: 280px 150px 133px;    
+        grid-template-rows: 280px 150px 133px;
     }
-    
+
     .top__grid-title {
         margin: 0;
         padding-right: 150px;
     }
-    
+
     .top__title-text {
         margin: 30px 0;
     }
-    
+
     .top__title-text_regular {
         font-size: 57px;
         font-weight: 400;
@@ -894,7 +894,7 @@ hr {
         grid-row: 2;
         margin: 40px 0;
     }
-    
+
     .top__info {
         height: 133px;
     }
@@ -998,7 +998,7 @@ hr {
     .footer__container {
         height: 397px;
         flex-wrap: wrap;
-        
+
     }
 
     .footer__menu {
@@ -1042,7 +1042,7 @@ hr {
         letter-spacing: 0px;
         text-align: left;
     }
-    
+
     .date__text_regular {
         font-size: 18px;
         font-weight: 700;
@@ -1099,7 +1099,7 @@ hr {
     .top__grid {
         height: 737px;
         grid-template-columns: 864px;
-        grid-template-rows: 330px 150px 255px;    
+        grid-template-rows: 330px 150px 255px;
     }
 
     .top__grid-info {
@@ -1116,15 +1116,15 @@ hr {
     .top__info-btn-container {
         margin: 30px 0px
     }
-    
+
     .twitter-icon {
         background-image: url('./images/gray-twitter-icon.svg');
     }
-    
+
     .inst-icon {
         background-image: url('./images/gray-inst-icon.svg');
     }
-    
+
     .fc-icon {
         background-image: url('./images/gray-fc-icon.svg');
     }
@@ -1167,7 +1167,7 @@ hr {
     h3 {
         text-align: center;
     }
-    
+
     .date__text_regular {
         font-size: 18px;
         font-weight: 700;
@@ -1183,7 +1183,7 @@ hr {
     h4 {
         margin: 18px 0px 14px 0px;
     }
-    
+
     .top-cubes-image {
         display: none;
     }
@@ -1197,7 +1197,7 @@ hr {
         width: 500px;
         height: 675px;
         grid-template-columns: 500px;
-        grid-template-rows: 220px 200px 255px;    
+        grid-template-rows: 220px 200px 255px;
     }
 
     .top__grid-title {
@@ -1294,7 +1294,7 @@ hr {
     .logos {
         margin: 0 auto
     }
-    
+
     .footer__container {
         justify-content: normal;
     }
@@ -1352,7 +1352,7 @@ hr {
         letter-spacing: 0px;
         text-align: center;
     }
-    
+
     .top__title-text_regular {
         font-size: 44px;
         font-weight: 400;
@@ -1366,7 +1366,7 @@ hr {
         line-height: 30px;
         text-align: center;
     }
-    
+
     .date__text_regular {
         font-size: 16px;
         line-height: 19px;
@@ -1380,7 +1380,7 @@ hr {
 
     .top__grid {
         width: 330px;
-        grid-template-columns: 330px;   
+        grid-template-columns: 330px;
     }
 
     .top__grid-info {
