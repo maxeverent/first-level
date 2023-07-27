@@ -669,6 +669,7 @@ hr {
 .footer__logos {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .footer__logos-main-logo {

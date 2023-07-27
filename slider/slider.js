@@ -44,7 +44,7 @@ window.addEventListener('resize', (e) => {
 
 const updateProgressBar = (direction) => {
     if (direction == 'right') {
-        progressBarWidth += oneStepWidth       
+        progressBarWidth += oneStepWidth
         progressBar.style.width = progressBarWidth + 'px'
     }
     if (direction == 'left') {
@@ -95,7 +95,7 @@ partnersItems.addEventListener('touchstart', (e) => {
 }, false)
 
 partnersItems.addEventListener('touchend', (e) => {
-    
+
     mobileOffset += xDiff
 
     //правый край
@@ -105,7 +105,7 @@ partnersItems.addEventListener('touchend', (e) => {
         switchRightBtn.setAttribute('src', './images/arrow-right.svg')
         switchLeftBtn.setAttribute('src', './images/arrow-left_green.svg')
         progressBar.style.width = partnersWidth + 'px'
-    } 
+    }
     //левый край
     else if (mobileOffset > 0) {
         partnersItems.style.transform = `translate(${0}px, 0px)`
@@ -114,7 +114,7 @@ partnersItems.addEventListener('touchend', (e) => {
         switchLeftBtn.setAttribute('src', './images/arrow-left.svg')
         progressBarWidth = countItemsInVision*oneStepWidth
         progressBar.style.width = progressBarWidth + 'px'
-    } 
+    }
     //середина
     else {
         progressBarWidth = countItemsInVision*oneStepWidth
@@ -141,12 +141,13 @@ partnersItems.addEventListener('touchmove', (e) => {
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
         //свайп вправо
         if (xDiff > 0 ) {
-            partnersItems.style.transform = `translate(${mobileOffset+xDiff}px, 0px)`        
-        } 
+            partnersItems.style.transform = `translate(${mobileOffset+xDiff}px, 0px)`
+            switchRightBtn.setAttribute('src', './images/arrow-right_green.svg');
+        }
         //свайп влево
         if (xDiff < 0) {
             partnersItems.style.transform = `translate(${mobileOffset+xDiff}px, 0px)`
-            switchLeftBtn.setAttribute('src', './images/arrow-left_green.svg')         
+            switchLeftBtn.setAttribute('src', './images/arrow-left_green.svg')
         }
     }
 }, false)
